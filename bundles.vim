@@ -38,6 +38,9 @@ Bundle 'nathanaelkane/vim-indent-guides'
 "--------------
 " IDE features
 "--------------
+Bundle "skwp/vim-conque"
+Bundle "skwp/vim-ruby-conque"
+
 Bundle 'scrooloose/nerdtree'
 Bundle 'humiaozuzu/TabBar'
 Bundle 'majutsushi/tagbar'
@@ -45,6 +48,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-powerline'
+"Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
 Bundle 'bronson/vim-trailing-whitespace'
 
@@ -80,6 +84,7 @@ Bundle 'tpope/vim-markdown'
 
 "------- Ruby --------
 Bundle 'tpope/vim-endwise'
+Bundle "vim-ruby/vim-ruby.git"
 
 "------- Go ----------
 Bundle 'jnwhiteh/vim-golang'

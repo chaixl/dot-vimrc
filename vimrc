@@ -14,7 +14,8 @@ syntax on
 "--------
 " color scheme
 set background=dark
-color vividchalk
+" color vividchalk
+color tomorrow-night
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -157,8 +158,22 @@ let NERDCompactSexyComs=1
 " ZenCoding
 let g:user_zen_expandabbr_key='<C-j>'
 
+"Airline
+"let g:airline_enable_fugitive = 1
+"let g:airline_enable_syntastic = 1
+"let g:airline_theme='dark'
+"let g:airline_powerline_fonts = 1
+
+"let g:airline_left_sep = ''
+"let g:airline_left_alt_sep = ''
+"let g:airline_right_sep = ''
+"let g:airline_right_alt_sep = ''
+"let g:airline_fugitive_prefix = ' '
+"let g:airline_readonly_symbol = ''
+"let g:airline_linecolumn_prefix = ' '
+
 " powerline
-"let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'fancy'
 
 " NeoComplCache
 let g:neocomplcache_enable_at_startup=1
@@ -237,7 +252,7 @@ nnoremap ; :
 if has("gui_running")
     set go=aAce  " remove toolbar
     "set transparency=30
-    set guifont=Monaco:h13
+    set guifont=Monaco\ for\ Powerline:h13
     set showtabline=2
     set columns=140
     set lines=40
