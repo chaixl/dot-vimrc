@@ -14,7 +14,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'honza/vim-snippets'
 Bundle 'ervandew/supertab'
-Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
 "------ snipmate dependencies -------
 Bundle 'MarcWeber/vim-addon-mw-utils'
@@ -40,8 +40,8 @@ Bundle 'nathanaelkane/vim-indent-guides'
 "--------------
 Bundle "skwp/vim-conque"
 Bundle "skwp/vim-ruby-conque"
-
 Bundle 'scrooloose/nerdtree'
+Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'humiaozuzu/TabBar'
 Bundle 'majutsushi/tagbar'
 Bundle 'mileszs/ack.vim'
