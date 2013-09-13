@@ -46,6 +46,7 @@ set title                                                         " show file in
 set laststatus=2                                                  " use 2 lines for the status bar
 set matchtime=2                                                   " show matching bracket for 0.2 seconds
 set matchpairs+=<:>                                               " specially for html
+set noswapfile
 " set relativenumber
 
 " Default Indentation
@@ -58,12 +59,10 @@ set shiftwidth=4    " indent width
 " set smarttab
 set expandtab       " expand tab to space
 
-autocmd FileType php setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
-autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 autocmd FileType coffee,javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
-autocmd FileType html,htmldjango,xhtml,haml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0
+autocmd FileType html,xhtml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0
 autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 
 " syntax support
@@ -149,6 +148,7 @@ let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 " let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
 let NERDTreeShowBookmarks=1
 let NERDTreeWinPos = "right"
+let g:NERDTreeDirArrows=0
 
 " nerdcommenter
 let NERDSpaceDelims=1
@@ -156,7 +156,7 @@ let NERDSpaceDelims=1
 let NERDCompactSexyComs=1
 
 " ZenCoding
-let g:user_zen_expandabbr_key='<C-j>'
+" let g:user_zen_expandabbr_key='<C-j>'
 
 "Airline
 "let g:airline_enable_fugitive = 1
@@ -173,7 +173,7 @@ let g:user_zen_expandabbr_key='<C-j>'
 "let g:airline_linecolumn_prefix = ' '
 
 " powerline
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
 
 " NeoComplCache
 let g:neocomplcache_enable_at_startup=1
